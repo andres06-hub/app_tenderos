@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/workspace.css">
+    <link rel="shortcut icon" href="/static/img/icino_tendero.png">
+    <title>WORKSPACE</title>
+</head>
+<body>
+    <div class="contenedor-1-workspace">
+        <div id="menu-work">
+            <div id="icono-img">
+                <img src="/static/img/icino_tendero.png" alt="Logo">
+            </div>
+            <h3 id="title-tendero">TENDERO</h3>
+            <nav class="menu-landing">
+                <ul>
+                    <li><a id="a-cerrar-sesion" href="{{url_for('sesion_cerrada')}}">cerrar sesion</a></li>
+                    <!-- <li><a id="a-signUp" href="{{url_for('interfaz_signUp')}}">Registrarme</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div id="conteo">
+            <div id="usuarios-reg">
+                <h2>Usuarios registrados: </h2>
+                <h4>{{longitud_usuarios}}</h4>
+            </div>
+            <!-- <div id="saldo-limite">
+                <h2 class="title-saldo">Saldo de creditos: </h1>
+                <h5> {{simbolo_moneda}}{{saldo}}</h5>
+                <div class="container-a-saldo">
+                    <a href="{{url_for('interfaz_saldo')}}">Editar saldo<img src="https://img.icons8.com/ios-glyphs/20/000000/edit--v1.png"/></a>
+                </div>
+            </div> -->
+            
+            <!-- FORM de buscar los usuarios -->
+            <div id="buscar">
+                <form method="POST" action="{{url_for('get_usuario_buscado')}}">
+                    <input title="Buscar usuarios" type="text" name="buscar" id="buscar" placeholder="Buscar">
+                    <input title="boton buscar" src="/static/img/img_buscar.png" type="image" id="buscar-input" value="">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="container-crear-usuario">
+            <section id="crear-usuario">
+                <a href="{{url_for('interfaz_crear_usuario')}}"> Crear usuario<img src="https://img.icons8.com/fluency-systems-regular/20/000000/create--v2.png"/></a>
+            </section>
+        </div>
+
+        <div class="usuarios">
+            {% for usuario in usuarios %}
+            <div class="user-item">
+                <p>Nombre: {{ usuario.nombres }}</p>
+                <p>Documento: {{ usuario.documento }}</p>
+                <p>Movil: {{ usuario.movil }}</p>
+                <p>Saldo: ${{ usuario.saldo }}</p>
+                <div class="div-ancla-edit">
+                    <a class="ancla-editar" href="{{url_for('interfaz_editar_usuario',id=usuario.documento)}}">Editar <img src="https://img.icons8.com/ios-glyphs/20/000000/edit--v1.png"/></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</body>
+</html>

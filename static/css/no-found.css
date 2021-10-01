@@ -1,0 +1,39 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: 38em;
+    background-color: rgb(44, 42, 42);
+}
+
+.contenedor-1{
+    /* border: 2px solid red; */
+    background-color: rgb(34, 63, 114);
+    height: 15em;
+    width: 60em;
+}
+
+#anclas-regreso{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#anclas-regreso a{
+  color: white;  
+} 
+
+h1{
+    font-size: 3em;
+}

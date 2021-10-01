@@ -1,0 +1,97 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html{
+    margin: 0px;    
+}
+a {
+    text-decoration: none;
+}
+.formulario-login {
+    height: 100vh;
+    background: linear-gradient(rgb(228, 168, 89) 80%, black 0%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.container_registro {
+    /* border: 2px solid red; */
+    width: 20%;
+    background: white;
+    border-radius: 20px;
+    padding: 1.5% 4% 4% 4%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    /* justify-content: center; */
+    /* border: 2px solid brown; */
+    height: 80%;
+}
+#encabezado_registro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    height: 50px;
+
+}
+#registrarse {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+#iniciar_sesion{
+    color: #b4b4b4;
+
+}
+
+#ancla_registro {
+    color: black;
+}
+input {
+    /* padding: 5px 40% 5px 4%;
+    border-radius: 30px;
+    background-color: #e0e0e0; */
+    padding: 5px 30% 5px 4% ;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+}
+label {
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+#botton_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+    margin-top: 15%;
+    /* border: 1px solid blue; */
+}
+
+#button {
+    padding: 2% 20%;
+    border-radius: 30px;
+    background-color: #424245;
+    color: white;
+
+}
+
+#link-volver-landing{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 15px;
+    color: blue;
+
+}

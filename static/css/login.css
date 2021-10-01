@@ -1,0 +1,115 @@
+
+/* ##################### */
+    /*------ LOGIN -------*/
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration:none ;
+}
+
+body{
+    margin: 0;
+}
+
+.container-1-login{
+    height: 100vh;
+    background: linear-gradient(rgb(17, 49, 90)80%,black 0%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-login{
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    /* display: grid; */
+    padding: 1.5% 4% 4% 4%;
+    background-color: white;
+}
+
+
+#encabezado-login{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+}
+
+#iniciar-sesion{
+    border-bottom: 2px solid black;
+}
+
+#ancla-inicio{
+    color: black;
+}
+
+#ancla-registro{
+    color: #B4B4B4;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    margin-top: 20px;
+}
+
+.input-e-p{
+    /* padding-right: 40%; */
+    padding: 5px 21% 5px 4% ;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+
+}
+
+.pass{
+    margin-top: 20px;
+}
+
+label{
+    margin-bottom: 4%;
+}
+
+p{
+    font-size: 11px;
+    margin-bottom: 13%;
+    margin-top: 8%;
+}
+
+span{
+    margin-left: 10%;
+}
+
+#botton-inicio{
+    padding: 2% 20%;
+    border-radius: 30px;
+    background-color: #424245;
+    color: white;
+}
+
+#botton-form{
+    /* border: 1px solid red; */
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#link-volver-landing{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 15px;
+    color: blue;
+
+}
+
+

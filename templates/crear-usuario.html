@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/crear-usuario.css">
+    <title>CREAR USUARIO</title>
+</head>
+<body>
+    <div class="contenedor-1-workspace">
+        <div id="menu-work">
+            <div id="icono-img">
+                <img src="/static/img/icino_tendero.png" alt="Logo">
+            </div>
+            <h3 id="title-tendero">TENDERO</h3>
+            <nav class="menu-landing">
+                <ul>
+                    <li><a id="a-cerrar-sesion" href="{{url_for('sesion_cerrada')}}">cerrar sesion</a></li>
+                    <li><a  href="{{url_for('interfaz_workspace')}}">Volver</a></li>
+                 </ul>
+            </nav>
+        </div>
+
+        <section id="seccion-form-usuario">
+            <form method="POST" action="{{url_for('post_crear_usuario')}}">
+                
+                <label for="doc">Documento:</label>
+                <input id="documento" type="text" placeholder="documento" name="documento">
+                
+                <label for="nom">Nombres:</label>
+                <input id="nombres" type="text" placeholder="Nombres" name="nombres">
+                
+                <label for="mov">Movil:</label>
+                <input id="movil" type="text" placeholder="Movil" name="movil">
+                
+                <label for="saldo">Saldo:</label>
+                <input id="saldo" type="number" placeholder="Saldo" name="saldo">
+                
+                <div>
+                    <input id="boton-enviar" type="submit" value="GUARDAR">
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+
+</body>
+</html>

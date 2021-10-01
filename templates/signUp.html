@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/signUp.css">
+    <title>REGISTRO</title>
+</head>
+<body>
+    <body>
+    <div class="formulario-login">
+        <div class="container_registro">
+            <div id="encabezado_registro"> 
+                <a id="iniciar_sesion" href="{{url_for('interfaz_login')}}">INICIAR SESIÓN</a>
+                <div id="registrarse" >
+                    <a id="ancla_registro" href="{{url_for('interfaz_signUp')}}">REGISTRO</a>
+                </div>
+            </div>
+            <form method="POST" action="/signUp">
+                <label for="Nombres">Nombres:</label> 
+                <input id="nombres" type="text" placeholder="Ingrese sus nombres">
+                <label for="documento">Documento:</label>           
+                <input id="documento" type="text" placeholder="Ingrese sus documento">
+                <label for="correo">Correo:</label>
+                <input id="correo" type="email" placeholder="Ingrese su correo">
+                <label for="contraseña">Contraseña:</label>
+                <input id="password" type="password" placeholder="Ingrese su password">
+                <div id="botton_form" >
+                    <input id="button" type="submit"  value="REGISTRARSE">
+                    <!-- <input id="button" type="submit" value="REGISTRARSE"> -->
+                </div>
+            </form>
+            <a id="link-volver-landing" href="{{url_for('interfaz_navegacion')}}">Volver</a>
+        </div>
+    </div>
+</body>
+</html>

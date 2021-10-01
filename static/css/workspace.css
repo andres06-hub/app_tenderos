@@ -1,0 +1,245 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+    margin: 0;
+}
+
+#title-tendero{
+    color: white;
+}
+
+.contenedor-1-workspace{
+    min-height: 38em;
+    /* border:5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    border-bottom:  1px solid rgb(119, 119, 119);
+    background-color: rgba(51, 51, 51, 0.452);
+}
+
+#menu-work{
+    background-color: rgb(34, 63, 114);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    min-height: 3em;
+}
+
+#icono-img img{
+    object-fit: contain;
+    width: 5em;
+    height: 3em;
+    
+}
+
+nav{
+    min-width: 15em;
+    min-height: 1em;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+li{
+    display: flex;
+    margin: 0;
+}
+
+li a{
+    text-decoration: none;  
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 0.2em 0em;
+}
+
+a:hover{
+    overflow:hidden ;
+}
+
+#a-cerrar-sesion{
+    color: black;
+    border: 1px solid rgb(5, 3, 1);
+    background-color: rgb(228, 168, 89);
+}
+
+h3{
+    margin: 0;
+    color: black;
+}
+h4{
+    font-size: 20px;
+}
+
+/* #buscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#conteo{
+
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.title-saldo{
+    font-size: 15px;
+    margin: 0%;
+
+}
+
+h5{
+    font-size: 18px;
+    margin: 0%;
+}
+
+/* IMG EDIT */
+.editar-usuarios{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.editar-usuarios a{
+    text-decoration: none;
+    color: blue;
+}
+
+#usuarios-reg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+
+#saldo-limite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.container-a-saldo{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    
+}
+
+.container-a-saldo a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+.usuarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.user-item {
+    display:flex;
+    padding: 1em;
+    border: 2px solid black;
+    width: 97%;
+    height: 2em;
+}
+
+.user-item > * {
+    margin: 0;
+    padding: 0 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.user-item > * + * {
+    border-left: 2px solid black;
+    max-height: 100%;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#crear-usuario a{
+    text-decoration:  none;
+    color: white;
+
+}
+
+#crear-usuario a:hover{
+    background-color: rgb(34, 63, 114);
+    width: 100%;
+    height: 100%;
+    
+}
+
+#crear-usuario{
+    width: 10em;
+    height: 2em;
+    margin-left: 1.5em;
+    /* padding-left: 1em; */
+    /* background-color: rgb(75, 84, 102); */
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.1em;
+}
+
+.container-crear-usuario{
+    /* border: 1px solid red; */
+    margin-bottom: 1em;
+}
+
+.ancla-editar{
+    text-decoration: none;
+    color: rgb(44, 42, 42);
+
+}
+
+.div-ancla-edit{
+    border: 2px solid black;
+    width: 50em;
+
+}
+
+.div-ancla-edit:hover{
+    background-color: black;
+}
+
+#buscar-input{
+    padding: 0.1em 0.8em;
+    background-color: rgb(245, 173, 19);
+    margin: 0;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/editar-saldo.css">
+    <title>EDITAR SALDO CREDITOS</title>
+</head>
+<body>
+    <div class="contenedor-1-workspace">
+        <div id="menu-work">
+            <div id="icono-img">
+                <img src="/static/img/icino_tendero.png" alt="Logo">
+            </div>
+            <h3 id="title-tendero">TENDERO</h3>
+            <nav class="menu-landing">
+                <ul>
+                    <li><a id="a-cerrar-sesion" href="{{url_for('sesion_cerrada')}}">cerrar sesion</a></li>
+                    <li><a  href="{{url_for('interfaz_workspace')}}">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="container-cambios">
+
+            <p>Si deseas cambiar el saldo de creditos <br> para cada usuario, lo puedes hacer</p>
+            <form method="POST" action="{{url_for('limite_saldo')}}">
+                <label for="saldo">Saldo:</label>
+                <input id="saldo" name="saldo" type="number" placeholder="Ingrese el valor">
+                
+                <div class="guardar-saldo">
+                    <input id="boton-guardar" type="submit" value="Guardar">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

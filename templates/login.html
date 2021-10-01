@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>INICIO SESION</title>
+</head>
+<body>
+    <div class="container-1-login">
+        <div id="container-login">
+            <div id="encabezado-login">
+                <div id="iniciar-sesion">
+                    <a id="ancla-inicio" href="{{url_for('interfaz_login')}}">INICIAR SESIÓN</a>
+                </div>
+                <a id="ancla-registro" href="{{url_for('interfaz_signUp')}}">REGISTRO</a>
+            </div>
+
+            <form method="POST" action="/login">
+                <label class="mail" for="mail">Email</label>
+                <input class="input-e-p" id="email" type="email" placeholder="Email">
+                <label class="pass" for="pass">Password</label>
+                <input class="input-e-p" id="password" type="password" placeholder="Contraseña">
+
+                <p>
+                    <input type="checkbox" name="" value="h"> Acepto los <a href="#">Terminos y condiciones</a> <br> <span>de las <a href="#">Politicas de privacidad</span></a>
+                </p>
+                <div id="botton-form">
+                    <input id="botton-inicio" type="submit" value="INICIAR SESION">
+                    <!-- <input id="botton-inicio" type="submit" value="INICIAR SESION"> -->
+                </div> 
+            </form>
+            <a id="link-volver-landing" href="{{url_for('interfaz_navegacion')}}">Volver</a>
+        </div>
+    </div>
+</body>
+</html>

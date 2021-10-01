@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIMINAR USUARIO</title>
+</head>
+<body>
+    ¿Desea eliminar el usuario?
+    <section class="opciones-usuario">
+        <form method="POST" action="{{url_for('eliminar_usuario')}}">
+            <input name="documento" type="text" value="{{usuario.documento}}" placeholder="Documento" readonly>
+            <input id="input-eliminar" name="botonEliminarUsuario" type="submit" value="Eliminar">
+        </form>
+    </section>
+</body>
+</html>

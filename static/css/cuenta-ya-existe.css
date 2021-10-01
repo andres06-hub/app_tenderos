@@ -1,0 +1,34 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+
+    background-color: rgb(44, 42, 42);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 38em;
+    /* border: 1px solid red  ; */
+}
+
+.contenedor-login-inexitente{
+    background-color: rgb(22, 44, 82);
+    height: 15em;
+    width: 45em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 0em 1.5em;
+    color: white;
+    border-bottom: 2px solid black;
+}
